@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class StringchangeOccurrences {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a string: ");
+        String input = scanner.nextLine();
+
+        char firstChar = input.charAt(0);
+
+        String result = firstChar + input.substring(1).replace(firstChar, '$');
+
+        System.out.println(result);
+
+        scanner.close();
+	}
+
+}
